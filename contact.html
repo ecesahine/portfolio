@@ -5,20 +5,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CONTACT ME</title>
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
   <header>
-    <div class="curved-text">ece sahin</div>
+    <span class="logo">ece sahin</span>
     <nav class="navbar">
       <ul class="nav-item">
-        <li><a href="/projects.html">PROJECTS</a></li>
-        <li><a href="/about.html">ABOUT ME</a></li>
-        <li><a href="/contact.html">CONTACT</a></li>
+        <li class="item-h"><a href="/index.html">HOME</a></li>
+        <li class="item-p"><a href="/projects.html">PROJECTS</a></li>
+        <li class="item-c"><a href="/contact.html">CONTACT</a></li>
       </ul>
     </nav>
   </header>
-
+  <div class="footer">
+    <p></p>
+  </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
@@ -28,15 +30,15 @@
         trigger: "header",
         toggleActions: "play reverse play reverse",
         markers: true
-      }, backgroundColor: "purple", padding: "2rem 0"
+      }, backgroundColor: "rgb(248, 253, 205)", padding: "2rem 0"
     });
-
 
   </script>
 
-  <div class="container">
-    <h2>Get in touch</h2>
-    <p>Schedule an Appointment</p>
+  <div class="container-contact">
+  <div class="get">
+  <h2 class="contact-h2"><span>GET </span><span>IN </span><span>TOUCH</span></h2>
+  </div>
     <div class="form">
       <form action="action_page.php">
         <label for="form-name">Name</label>
@@ -52,7 +54,7 @@
         <label for="form-message">Your message</label>
         <textarea id="form-message" name="Your message" placeholder="Leave your message.." style="height:200px"></textarea>
         <input type="submit" value="Submit">
-    
+  
       </form>
     </div>
 
